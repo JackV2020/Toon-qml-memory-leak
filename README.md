@@ -61,9 +61,15 @@ To get familiar with the app we make 2 measurements and compare the results.
 
 To make a measurement in basic mode make sure you have no other apps installed than the ToonStore and the xmlHttpRequestHowTo app. After each restart of the GUI the app is in basic mode and the tile is red. After startup you see some data on the tile after a while. At least make a note of the 'uptime of the GUI' and 'the memory size of the GUI'. Let it run for some hours and make a note of the 'uptime of the GUI' and 'the memory size of the GUI' again. Calculate the runtime by substracting the two uptimes and calculate the memory growth by substracting the two memory sizes. Divide the growth by the runtime and you have the growth in kB/second in basic mode.
 
-To make a measurement in saving mode you click on the tile and it turns green. No restart is needed. At least make a note of the 'uptime of the GUI' and 'the memory size of the GUI'. Let it run for some hours and make a note of the 'uptime of the GUI' and 'the memory size of the GUI' again. Calculate the runtime by substracting the two uptimes and calculate the memory growth by substracting the two memory sizes. Divide the growth by the runtime and you have the growth in kB/second in saving mode.
+To make a measurement in saving mode you reboot Toon and after startup you click on the tile and it turns green. Like previous time, at least make a note of the 'uptime of the GUI' and 'the memory size of the GUI'. Let it run for some hours and make a note of the 'uptime of the GUI' and 'the memory size of the GUI' again. Calculate the runtime by substracting the two uptimes and calculate the memory growth by substracting the two memory sizes. Divide the growth by the runtime and you have the growth in kB/second in saving mode.
 
 Now compare what you found and multiply the results by 86400 to get an idea of the difference in kB memory loss in 24 hours.
+
+You may run both measurements for 24 hours when you have the time for it and compare to what you just calculated. You may find that the numbers are a little bit larger which is caused by the ToonStore which does some app version checking every now and then.
+
+### Option : Domoticz plugin with control buttons and many devices to create graphs
+
+When you have Domoticz you can also use my plugin which I use during app developoment. It has 6 controls and more that 30 devices to measure what is going on in Toon. See https://github.com/JackV2020/Domoticz-ToonMonitor for that.
 
 ### Changing your app and measuring the difference.
 
@@ -74,5 +80,3 @@ Next you optimize your app, measure and calculate the kB/sec for your app again 
 The more active your app is and the bigger the onreadystatechanges, when you have these, and the data structures are the bigger your savings will be.
 
 Thanks for reading and enjoy optimizing.
-
-
