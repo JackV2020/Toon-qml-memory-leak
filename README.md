@@ -73,9 +73,9 @@ When you have Domoticz you can also use my plugin which I use during app develop
 
 ### Changing your app and measuring the difference.
 
-To change your app and measure the improvement you make a baseline first. Install your app as it is and run xmlHttpRequestHowTo in saving mode and you do a measurement and a calculation for kB/sec. You know the kB/sec for the saving mode so you can substract that to find the kB/sec for your app.
+To change your app and measure the improvement you make a baseline first. So install your app as it is and run xmlHttpRequestHowTo in saving mode and you do a measurement and a calculation for kB/sec. You know the kB/sec for the saving mode so you can substract that to find the kB/sec for your app.
 
-Next you optimize your app, measure and calculate the kB/sec for your app again and compare to what you found before.
+Next you optimize your app, run xmlHttpRequestHowTo in saving mode, measure and calculate the kB/sec for your app again and compare to what you found before.
 
 The more active your app is and the bigger the onreadystatechanges, when you have these, and the data structures are the bigger your savings will be.
 
